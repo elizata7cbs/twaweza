@@ -62,17 +62,17 @@ if 'runserver' in sys.argv:
         group = Group.objects.get(name='admin')
         print("Creating dummy Administrator")
         user = CustomUser.objects.create(
-            first_name="Test",
+            first_name="Tester",
             last_name="Admin",
             username="admin",
             is_superuser=False,
             is_active=True,
             schools=school,
-            email="titusmbole9@gmail.com",
+            email="elizatasha18@gmail.com",
             usergroup=group,
             address="N/A",
             is_verified=True,
-            phone_number="0799886633",
+            phone_number="0711223344",
             password=make_password("admin"),
         )
         user.groups.add(group)
